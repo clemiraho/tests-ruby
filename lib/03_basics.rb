@@ -1,46 +1,37 @@
-def echo(str)
-    return str
-end
+def who_is_bigger(a, b, c)
+    if !a || !b || !c
+      return "nil detected"
+    end
+    if a > b && a > c
+      return "a is bigger"
+    end
+    if b > a && b > c
+      return "b is bigger"
+    end
+    if c > a && c > b
+      return "c is bigger"
+    end
+  end
+  
+  def reverse_upcase_noLTA
 
-def shout(str)
-    str2 = str.upcase
-    return str2
-end
-
-def repeat(str, n = 2)
-
-    
-    str2 = (str + " ") * (n - 1) + str  
-    return str2
-end
-
-def start_of_word(str, n)    
-    tmp = ""
+  end
+  
+  def array_42(array)
     i = 0
-    while i < n do 
-        tmp = tmp + str[i]
-        i += 1
-    end 
-    return tmp
-end 
+    c = false
+    while array[i] do
+      if array[i] == 42
+        c = true
 
-def first_word(str)
-    arr = str.split
-    return arr[0]
-end 
+      end
 
-def titleize(str)
-    arr = str.split() 
-    arr.each {|mot|
-    if mot == arr[0]
-        mot.capitalize!
-    elsif mot == "and" || mot == "the"
-        mot = mot
-    else    
-        mot.capitalize!  
-    end  
-}
-    arr2 = arr.join(" ")
-    return arr2
+      i += 1
 
+    end
+
+  end
+  
+  def magic_array(array)
+    
 end
